@@ -1,0 +1,18 @@
+#navbar{
+    font-family:fantasy , sans-serif;
+}
+#navbar .dropdown-header .row:nth-child(1){
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar .dropdown-header .row:nth-child(2){
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.icono{
+    height: 70px;
+}

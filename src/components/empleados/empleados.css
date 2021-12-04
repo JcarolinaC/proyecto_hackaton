@@ -1,0 +1,58 @@
+/* -----------BARRAS DE NAVEGACION INICIALES------- */
+#empleados-buscar-container{
+    margin-top: 50px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+#empleados-container{
+    margin-top: 130px;
+    padding-bottom: 30px;
+    background-color:darkslategray;
+    color: aliceblue;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: yellow;
+}
+/*----------------ENCABEZADO DE TABLA------------------*/
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle{
+    float: left;
+    margin-bottom: 20px;
+}
+
+.search-label{
+    float: right;
+    padding-bottom: 10px;
+}
+#search-bar-0{
+    border: 3px solid blueviolet;
+}
+#search-bar-0:hover{
+    border: 3px solid yellow;
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, rgb(4, 23, 82));/*enfoque de color semi transparente de un color */
+    outline: none;/*fuera de linea ninguno*/
+}
+.sr-only{
+    font-size: 0;
+}
+.react-bootstrap-table >tr,th,tbody{
+    color: aliceblue;
+}
+/*----------------EDITAR Y CREAR EMPLEADOS--------------------- */
+#empleados-crear-container > .form-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 100px;
+    margin: 10px 50px;
+}
+.form-control{
+    border: 3px solid blueviolet;
+}
+.form-control:hover{
+    border: 3px solid yellow;
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, #48e);/*enfoque de color semi transparente de un color */
+    outline: none;/*fuera de linea ninguno*/
+}

@@ -1,0 +1,27 @@
+#login-container{
+    margin-top: 20%;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#login-container h2,
+#login-container button,
+#login-container form{
+    width: 100%;
+}
+
+#login-container button{
+    margin-top: 15px;
+}
+#login-container .form-label{
+    float: left;
+}
+#login-container .input{
+    border: 3px solid blue;
+}
+#login-container .input:hover{
+    border: 3px solid yellow;
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, rgb(4, 23, 82));/*enfoque de color semi transparente de un color */
+    outline: none;/*fuera de linea ninguno*/
+}
