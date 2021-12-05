@@ -18,9 +18,25 @@
     margin-top: 5px;
     color: rgb(8, 8, 8);
     background-color:  rgba(243, 236, 245, 0.616);
+
 }
+
 .icono{
     height: 70px;
    
 }
-    
+.PERRO{
+    height: 70px;
+    width: 70px;
+    justify-content: left;
+}
+.GATO{
+    height: 70px;
+    width: 70px;
+    justify-content: left;
+}
+ .PROMOCIONES{
+    height: 70px;
+    width: 70px;  
+    justify-content: left;
+}
