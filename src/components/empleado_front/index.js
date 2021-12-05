@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Nav } from 'react-bootstrap';
-import EmpleadosBuscar from './crud/buscar';
-import EmpleadosCrear from './crud/crear';
-import EmpleadosEditar from "./crud/editar";
-import "./empleados.css";
+import empleadoBuscar from './crud/buscar';
+import empleadoCrear from './crud/crear';
+import empleadoEditar from "./crud/editar";
+import "./empleado.css";
 
 
-export default class Empleados extends React.Component {
+export default class empleado extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,7 +31,7 @@ export default class Empleados extends React.Component {
 
     render() { 
         return (
-            <Container id="empleados-container">
+            <Container id="empleado-container">
                 <Row>
                     <Nav fill variant="tabs" 
                         defaultActiveKey="/Buscar"
@@ -49,14 +49,14 @@ export default class Empleados extends React.Component {
                 </Row>
                 <Row>
                     {this.state.currentTab === "Buscar" ? (
-                    <EmpleadosBuscar 
+                    <empleadoBuscar 
                         changeTab={this.changeTab}
                         setIdEmpleado={this.setIdEmpleado}
                     />
                     ) : this.state.currentTab === "Crear" ? (
-                        <EmpleadosCrear changeTab={this.changeTab}/>
+                        <empleadoCrear changeTab={this.changeTab}/>
                     ) : (
-                        <EmpleadosEditar 
+                        <empleadoEditar 
                         changeTab={this.changeTab}
                         getIdEmpleado={this.getIdEmpleado}
                         />

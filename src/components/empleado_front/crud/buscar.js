@@ -1,5 +1,5 @@
 import React from "react";
-import "../empleados.css";
+import "../empleado.css";
 import { request } from "../../helper/helper";
 import { Container, Row } from "react-bootstrap";
 import DataGrid from "../../grid/grid";
@@ -39,7 +39,7 @@ const columns = [
 }
 ];
 
-export default class EmpleadosBuscar extends React.Component {
+export default class empleadoBuscar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -101,7 +101,7 @@ export default class EmpleadosBuscar extends React.Component {
     eliminarEmpleado(){
         this.setState({ Loading: true });
         request
-        .delete(`/empleados/${this.state.idEmpleado}`)
+        .delete(`/empleado/${this.state.idEmpleado}`)
         .then((response)=>{
             this.setState({
                 Loading:false,
@@ -129,7 +129,7 @@ export default class EmpleadosBuscar extends React.Component {
 
     render() {
         return ( 
-            <Container id="empleados-buscar-container">
+            <Container id="empleado-buscar-container">
                 <ConfirmationPrompts
                 show={this.state.confirmation.show}
                 title={this.state.confirmation.title}
@@ -146,11 +146,11 @@ export default class EmpleadosBuscar extends React.Component {
                 <Loading show={this.state.Loading}/>
 
                 <Row>  
-                <h2>BUSCAR EMPLEADOS</h2>
+                <h2>BUSCAR empleado</h2>
                 </Row>
                 <Row>
                 
-                    <DataGrid url="/empleados" 
+                    <DataGrid url="/empleado" 
                     columns={columns}
                     showEditButton={true}
                     showDeleteButton={true}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../empleados/empleados.css";
+import "../empleado_front/empleado.css";
 import { Row, Col, Button } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory, { PaginationProvider, 
@@ -11,9 +11,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit,faTrash } from "@fortawesome/free-solid-svg-icons";
 import { isUndefined } from "util";
 
+
 const { SearchBar } = Search;
 
 export default class DataGrid extends React.Component {
+        
     constructor(props) {
         super(props);
         this.state = {

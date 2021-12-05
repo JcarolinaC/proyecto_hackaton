@@ -26,14 +26,15 @@ export default class menu extends React.Component {
                     <Navbar.Brand href="/home">
                 {/* para imagenes con react es mejor manejarlas desde la web con un link ya que demora menos en cargar*/}
                             <img className="icono" src="https://i.pinimg.com/originals/e1/30/46/e13046f09d44da8e32afdd5712d84032.jpg" alt="Logo"/>
-                        Pet Care
+                        
                         <span id="usuario-sub-branm">
                         
                         </span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <h1 class="display-2">Pet Care</h1>
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto"> 
                         {/*<Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">Link</Nav.Link>*/}
                     </Nav>

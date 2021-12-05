@@ -3,10 +3,10 @@ import { Container, Row, Form, Button } from 'react-bootstrap';
 import { request } from '../../helper/helper';
 import Loading from '../../loading/loading';
 import MessagePrompt from '../../prompts/message';
-import "../empleados.css";
+import "../empleado.css";
 
 
-export default class EmpleadosCrear extends React.Component {
+export default class empleadoCrear extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,10 +37,10 @@ export default class EmpleadosCrear extends React.Component {
         });
     }
 
-    guardarEmpleados(){
+    guardarempleado(){
         this.setState({ loading:true });
         request
-        .post('/empleados', this.state.empleado)
+        .post('/empleado', this.state.empleado)
         .then((response)=>{
             if(response.data.exito){
                 this.setState({
@@ -74,7 +74,7 @@ export default class EmpleadosCrear extends React.Component {
 
     render() { 
         return (
-            <Container id="empleados-crear-container">
+            <Container id="empleado-crear-container">
                 <MessagePrompt 
                 text={this.state.message.text}
                 show={this.state.message.show}
@@ -83,7 +83,7 @@ export default class EmpleadosCrear extends React.Component {
                 />
                 <Loading show={ this.state.Loading }/>
                 <Row>
-                    <h2>CREAR EMPLEADOS</h2>
+                    <h2>CREAR empleado</h2>
                 </Row>
                 <Row className="form-container">
                 <Form>
@@ -123,7 +123,7 @@ export default class EmpleadosCrear extends React.Component {
                         />
                     </Form.Group>
                     </Form.Group>
-                    <Button variant="primary" onClick={()=> console.log(this.guardarEmpleados())}>
+                    <Button variant="primary" onClick={()=> console.log(this.guardarempleado())}>
                         Guardar empleado
                     </Button>
                 </Form>

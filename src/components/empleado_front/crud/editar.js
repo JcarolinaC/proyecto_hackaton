@@ -4,10 +4,10 @@ import { request } from '../../helper/helper';
 import Loading from '../../loading/loading';
 import MessagePrompt from '../../prompts/message';
 import ConfirmationPrompt from '../../prompts/confirmation';
-import "../empleados.css";
+import "../empleado.css";
 
 
-export default class EmpleadosEditar extends React.Component {
+export default class empleadoEditar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +18,7 @@ export default class EmpleadosEditar extends React.Component {
                 show: false,
             },
             confirmation:{
-                title:"Modificar empleados",
+                title:"Modificar empleado",
                 text:"¿Esta seguro de guardar los cambios?",
                 show: false,
             },
@@ -45,7 +45,7 @@ export default class EmpleadosEditar extends React.Component {
     getEmpleado(){
         this.setState({ loading: true });
         request
-        .get(`/empleados/${this.state.idEmpleado}`)
+        .get(`/empleado/${this.state.idEmpleado}`)
         .then((response)=>{
             this.setState({
                 empleado: response.data,
@@ -67,10 +67,10 @@ export default class EmpleadosEditar extends React.Component {
         });
     }
 
-    guardarEmpleados(){
+    guardarempleado(){
         this.setState({ loading:true });
         request
-        .put(`/empleados/${this.state.idEmpleado}`, this.state.empleado)
+        .put(`/empleado/${this.state.idEmpleado}`, this.state.empleado)
         .then((response)=>{
             if(response.data.exito){
                 this.setState({
@@ -114,7 +114,7 @@ export default class EmpleadosEditar extends React.Component {
                 show: false,
             },
         },
-        this.guardarEmpleados()
+        this.guardarempleado()
         );
     }
 
@@ -126,7 +126,7 @@ export default class EmpleadosEditar extends React.Component {
 
     render() { 
         return (
-            <Container id="empleados-crear-container">
+            <Container id="empleado-crear-container">
                 <MessagePrompt 
                 text={this.state.message.text}
                 show={this.state.message.show}
@@ -144,7 +144,7 @@ export default class EmpleadosEditar extends React.Component {
                 
                 <Loading show={ this.state.Loading }/>
                 <Row>
-                    <h2>EDITAR EMPLEADOS</h2>
+                    <h2>EDITAR empleado</h2>
                 </Row>
                 <Row className="form-container">
                 <Form>

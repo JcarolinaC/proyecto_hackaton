@@ -11,6 +11,8 @@ import  Loading from "../loading/loading"
 const cookies = new Cookies(); 
 
 export default class login extends React.Component {
+    
+
     constructor(props) {
         super(props);
         this.state = { 
@@ -36,7 +38,7 @@ export default class login extends React.Component {
                     path: "/",
                     expires: calcularExpiracionSesion(),
                 });
-                this.props.history.push('/empleados');
+                this.props.history.push('/empleado');
             }
             this.setState({ Loading: false});
         })

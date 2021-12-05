@@ -1,10 +1,10 @@
 /* -----------BARRAS DE NAVEGACION INICIALES------- */
-#empleados-buscar-container{
+#empleado-buscar-container{
     margin-top: 50px;
     font-family: sans-serif;
     color: aliceblue;
 }
-#empleados-container{
+#empleado-container{
     margin-top: 130px;
     padding-bottom: 30px;
     background-color:darkslategray;
@@ -41,8 +41,8 @@
 .react-bootstrap-table >tr,th,tbody{
     color: aliceblue;
 }
-/*----------------EDITAR Y CREAR EMPLEADOS--------------------- */
-#empleados-crear-container > .form-container{
+/*----------------EDITAR Y CREAR empleado--------------------- */
+#empleado-crear-container > .form-container{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0 100px;
     margin: 10px 50px;
