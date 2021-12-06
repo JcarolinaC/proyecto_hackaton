@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Nav, Dropdown, Button, Form,FormControl, DropdownButton, Row, NavDropdown  } from "react-bootstrap";
+import { Container, Navbar, Nav, Button, Form,FormControl, NavDropdown  } from "react-bootstrap";
 import "./navbar.css";
 
 /*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -41,7 +41,7 @@ export default class menu extends React.Component {
 
                             <Nav.Link href="/home"></Nav.Link>
 
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
+                            <NavDropdown title="Categorias" id="navbarScrollingDropdown">
                             <NavDropdown.Item  href="PERRO">PERRO</NavDropdown.Item>
                                 <img className="PERRO" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeva5nHq1Q-HIpFRN---omoq3HB3VbjFPrFGl1sLiEQSeZhFcMaGsmhgHaD7YhbeN5sk&usqp=CAU" alt="PERRO" />
                                 

@@ -10,11 +10,9 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Home />
         <Menu />
-
+        <AppRouter />
       </Container>
-      <AppRouter />
     </div>
   );
 }

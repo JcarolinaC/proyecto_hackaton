@@ -21,9 +21,11 @@
 
 }
 
+#navbarScrollingDropdown{
+    color: #fff;
+}
 .icono{
     height: 70px;
-   
 }
 .PERRO{
     height: 70px;
@@ -35,7 +37,7 @@
     width: 70px;
     justify-content: left;
 }
- .PROMOCIONES{
+.PROMOCIONES{
     height: 70px;
     width: 70px;  
     justify-content: left;
